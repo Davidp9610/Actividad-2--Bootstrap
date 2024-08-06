@@ -1,0 +1,156 @@
+body{
+    background-image: url("./imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* para que se adecue la imagen a la pagina */
+}
+
+.myButton{
+    background: none; /* color fondo */
+    border: none;/* quitar borde o poner color borte botones */
+    background: #ffffff;/* color recuadro del texto */
+    color: black; /* color texto */
+    /* font-size:; */
+    border-radius: 40px; /* redondear los bordes de los botones */
+}
+
+.Button2{
+    background: none; /* color fondo */
+    border: none;/* quitar borde o poner color borte botones */
+    background: #89c3f6;/* color recuadro del texto */
+    color: rgb(2, 2, 2); /* color texto */
+    border-radius: 40px;
+
+}
+
+.myButton:hover{/* con este comando le personalizamos para el color del relleno y letra cuando pasemos el cursor por encima */
+    background-color:#198754; 
+    color: black;
+}
+.Button2:hover{/* con este comando le personalizamos para el color del relleno y letra cuando pasemos el cursor por encima */
+    background-color: rgb(88, 189, 248); 
+    color: black;
+}
+.button3{
+    background: none; /* color fondo */
+    border: none;/* quitar borde o poner color borte botones */
+    background: #EAA293;/* color recuadro del texto */
+    color: black; /* color texto */
+    border-radius: 40px;
+
+}
+
+.carousel {
+    height: 10%;
+    background-color: #00000062;
+}
+
+.carousel button span{
+    background-color: #f87000;
+    border-radius: 60%;
+    width: 15%;
+    height: 8%;
+}
+
+.btn-navbar {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.dropdown-item {
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ad5e29;
+}
+
+.dropdown-menu {
+    background-color: #DC7633;
+}
+ /* .mapa{
+    width: 300px;
+    height: 300px;
+    border: none;
+    top: 300px;
+    left: 300px;
+   
+ } */  /* PENDIENTE */
+  .title{
+    font-weight: bold; /* aplicar negrilla */
+    color: #DC7633;
+  }
+  .h2{
+font-weight: bold;
+color: #DC7633;
+  }
+ footer{
+    background-color: rgba(235, 180, 78, 0.883);/* parte inferior texto completo */
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    padding: 45px; /* separacion de los bordes */
+ }
+ /* .redes{
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50px);
+ } */
+ .redes{
+    text-align: center;
+    background-size: cover;
+    font-size: 40px; /* tamaño logos */
+    color: rgb(254, 0, 0);
+    margin: 20px;
+    border-radius: 50px;
+    padding: 15px; /* tamaño caja fredes */
+    box-shadow: 0px 5px 10px rgb(234, 139, 7); 
+ }
+ 
+ .bi-facebook:hover{
+    border-radius: 70px;
+    background-color: blue;
+    color: white ;
+    box-shadow: 0 0 15px blue,
+                0 0 45px  blue
+                0 0 75px    blue
+                0 0 115px   blue;
+                
+ }
+ .bi-twitter:hover{
+    border-radius: 70px;
+    background-color:aqua;
+    color: white ;
+    box-shadow: 0 0 15px aqua,
+                0 0 45px  aqua
+                0 0 75px   aqua
+                0 0 115px  aqua;
+                
+ }
+ .bi-instagram:hover{
+    border-radius: 70px;
+    background-color:#f87000;  
+    color: white ;
+    box-shadow: 0 0 15px#f87000,
+                0 0 45px  #f87000
+                0 0 75px    #f87000
+                0 0 115px   #f87000;
+                
+ }
+
+ 

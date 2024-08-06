@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <title>AccesDemoliciones S.A.S</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #DC7633;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid" src="./imagenes/logo.jpg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cotiza</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Nuestros servicios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Demolición</a></li>
+                <li><a class="dropdown-item" href="#">Alquiler de maquinaria</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-navbar" type="submit">Buscar</button>
+          </form>
+          <div class="mx-2">
+            <a>
+              <button type="button" class="btn btn-outline-success btn-navbar" data-bs-toggle="modal"
+                data-bs-target="#ingresoUsuarioModal"> <i class="fa-solid fa-user"></i></button>
+            </a><!-- icono de personita -->
+
+            <a>
+              <button class="btn btn-outline-success btn-navbar"> <i class="fa-solid fa-map"></i></button>
+            </a><!-- icono de mapa -->
+            <a>
+              <button class="btn btn-outline-success btn-navbar"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </a><!-- icono de carro mercado -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECCION CARRUSEL -->
+    <section id="landing">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <center>
+              <img src="imagenes/imagen2.jpeg" class="d-block img-fluid img-carousel" style="height: 700px;" alt="...">
+            </center>
+          </div>
+          <div class="carousel-item">
+            <center>
+              <img src="imagenes/imagen3.jpeg" class="d-block img-fluid img-carousel" style="height: 700px;" alt="...">
+            </center>
+          </div>
+          <div class="carousel-item">
+            <center>
+              <img src="imagenes/imagen4.jpeg" class="d-block img-fluid img-carousel" style="height: 700px;" alt="...">
+            </center>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="ingresoUsuarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contactanos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="">Nombre</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese el nombre">
+            </div>
+            <div class="col-md-12">
+              <label for="">Correo</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese correo">
+            </div>
+            <div class="col-md-12">
+              <label for="">Telefono</label>
+              <input type="tel" name="nombre" id="nombre" class="form-control"
+                placeholder="Ingrese su número Telefonico">
+            </div>
+            <div class="row" class="form-floating">
+              <label for="">Solicitud</label>
+              <label for="solicitud"></label>
+              <center> <textarea class="form-control" class="col-md-12" placeholder="Digite su solicitud"
+                  id="floatingTextarea2" style="height: auto"></textarea>
+              </center>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="col-md-6 mx-auto">
+              <button type="button" class="btn btn-success w-100"> <i class="bi bi-arrow-right"></i> Ingresar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal -->
+  <!-- parte 2 -->
+  <center>
+    <h2>
+      UBICACION DE NUESTRA SEDE Y DEPOSITO DE VENTAS
+      <div class="row ms-auto">
+        <div><!-- revisar -->
+          <iframe col-md-6
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.20773625927296!2d-74.03588088482046!3d4.7603239305344776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f858954fa183f%3A0x807f3a1e9944fba0!2zQ2wuIDE4MyAjMTMtNTAsIFVzYXF1w6luLCBCb2dvdMOh!5e1!3m2!1ses!2sco!4v1722320636262!5m2!1ses!2sco"></iframe>
+        </div>
+    </h2>
+
+    </div>
+  </center>
+  <!-- redes sociales -->
+  <footer>
+    <address class="title">NUESTRAS REDES SOCIALES</address>
+    <div class="redes">
+      <a href="https://www.instagram.com/accesdemolicionessas/"><i class="fa-brands bi-facebook"> </i></a><a
+        href="https://www.instagram.com/accesdemolicionessas/"><i class="fa-brands bi-twitter"> </i></a>
+      <a href="https://www.instagram.com/accesdemolicionessas/"><i class="bi bi-instagram"> </i></a>
+
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

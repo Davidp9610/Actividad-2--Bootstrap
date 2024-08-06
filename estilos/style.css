@@ -1,0 +1,120 @@
+body{
+    font-family: 'Poppins', sans-serif;/* fuente o tipografia */
+    /* background-color: yellowgreen; *//* color pagina */
+    max-width: 900px; /* altf+shist+a ---ancho maximo de como quiero que se vea la pagina */
+    margin: 0 auto; /* margen */
+
+}
+nav{
+    width: 100%; /* ancho */
+    height: 160px;/* alto */
+    background-color: rgba(235, 180, 78, 0.883);/* color de fondo */
+
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block; /* para que los titulos queden en fila uno al lado del otro */ 
+    transition: 0.8s all; /* al pasar el cursor sobre el tirulo se sombree de color durante un tiempo */
+    padding: 0px 20px;/* tamaño del recuadro que se sombrea */
+}
+nav ul li:hover{ /* cuando este sobre un elemento realice una accion como sombrear de color */
+    background-color: rgb(231, 159, 15);
+}
+
+/* clases: conjunto de propiedades especialmente, para no usarlo muchas veces sino solo una ves */
+
+.img-logo{
+    width: 180px;/* ancho imagen*/
+    padding: 0px; /* ubicacion de la imagen logo */
+    /* padding-right: 5%; */
+}
+nav ul {
+    /* padding-top: 10px; */  /* relleno superior */
+    display: inline-flex;
+    position: relative;
+    top: -20px; /* acomodar el texto lateral */
+}
+nav ul li a{
+    text-decoration: none; /* decoracion texto titulos arriba */
+    color: black; /* color texto titulos arriba */
+}
+
+
+h2,figure, ul{
+margin: 0;
+
+}
+
+img{
+    max-width: 100%;
+
+}
+/* ESTILOS SECCION 1 */
+
+ .seccion1{ /* seccion1 es una clase, estas clases hay que llamarlas en el html para que realice cambios */
+    background-color: rgba(240, 193,107,0.616);
+ }
+ .video{
+    width: 55%;
+    padding: 15px;
+ }
+
+ .text{
+    width: 30%;
+    padding: 15px;
+    vertical-align: top;
+ }
+
+ article{
+    padding: 30px;
+    background-color: rgba(240, 220,107,0.582); /* este es para resaltar de color el texto 1 de la hamburguesa */
+ }
+ article h2 {   
+border-bottom:  solid thin black;
+
+ }
+ .text, .video {
+    display: inline-block;
+ }
+ .boton{
+    text-align: center; /* alinear texto */
+    background-color: #EA6E39;
+    padding: 10px; /* ancho del color del boton */
+ }
+ .boton a {
+    text-decoration: none;
+    color: white; /* color letra del boton mas info */
+ }
+ .boton:hover{
+    background-color: pink;
+ }
+
+ /* ARTICLE */
+section{
+    background-color: rgba(240, 220,107,0.582);
+    padding: 15px;
+    text-align: center; /* alinear textos */
+}
+section h2 {
+    border-bottom:  solid thin black; /* esto para poner linea bajo el titulo */
+}
+ .img-art {
+    max-width: 100%;
+ }
+ .cont-art{
+width: 100%;
+vertical-align: top;
+ }
+
+ footer{
+    background-color: rgba(235, 180, 78, 0.883);/* parte inferior texto completo */
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    padding: 45px; /* separacion de los bordes */
+ }
+
+ footer div a{ /* ajuste color de texto de redes sociales con solo agregar la "a"*/
+    text-decoration: none;
+    color: white;
+ }
